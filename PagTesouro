@@ -1,0 +1,24 @@
+Requisição:
+
+POST https://valpagtesouro.tesouro.gov.br/api/gru/solicitacao-pagamento
+
+HEADER Authorization: Bearer <token_jwt>
+
+BODY
+
+{
+  "codigoServico": "23",
+  "referencia": "321",
+  "competencia": "102020",
+  "vencimento": "26102020",
+  "cnpjCpf": "00000000000191",
+  "nomeContribuinte": "Empresa XYZ",
+  "valorPrincipal": "100",
+  "valorDescontos": "0",
+  "valorOutrasDeducoes": "0",
+  "valorMulta": "0",
+  "valorJuros": "0",
+  "valorOutrosAcrescimos": "0",
+  "modoNavegacao": "2",
+  "urlNotificacao": "https://valpagtesouro.tesouro.gov.br/api/simulador/ug/notificacao"
+}
